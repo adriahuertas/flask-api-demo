@@ -22,7 +22,7 @@ Retorna tots els currency rates
 
 ### /currency_rate
 
-Retorna el currency rate passant com a paràmetres els valors from i to. Exemple:
+Retorna el currency rate passant com a paràmetres els valors from i to. Exemple:  
 /currency_rate?from=EUR&to=USD
 
 ### /transactions
@@ -36,25 +36,25 @@ Retorna totes les transaccions passant com a paràmetres la currency i, opcional
 
 ### Amb Docker (recomanat)
 
-1 - Construir la imatge
+1 - Construir la imatge  
 docker build -t flask-rest-api .
 
-2 - Iniciar el contenidor
+2 - Iniciar el contenidor  
 docker run -d -p 5000:5000 flask-rest-api
 
 3 - Accedir a la URL http://localhost:5000 per comprovar que es rep el missatge "Hello world"
 
 ### Sense Docker
 
-1 - Crear entorn virtual i instal·lar dependències:
+1 - Crear entorn virtual i instal·lar dependències:  
 python -m venv venv
 venv/Scripts/activate
 pip install -r requirements.txt
 
-2 - Per executar els testos:
+2 - Per executar els testos:  
 python test.py
 
-3 - Per iniciar la API
+3 - Per iniciar la API  
 flask run
 
 4 - Accedir a la URL http://localhost:5000 per comprovar que es rep el missatge "Hello world"
