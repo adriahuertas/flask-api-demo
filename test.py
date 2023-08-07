@@ -45,6 +45,15 @@ class FlaskTest(unittest.TestCase):
         self.assertIn(b"1.359", message)
         self.assertEqual(status, 200)
 
+    # Comprova la resposta de la ruta /transactions
+    def test_transactions(self):
+        tester = app.test_client(self)
+        response = tester.get("/transactions?currency=USD&sku=T2006")
+        message = response.data
+        status = response.status_code
+        self.assertIn(b'[{"amount":"10.00","currency":"USD","sku":"T2006"}]', message)
+        self.assertEqual(status, 200)
+
 
 # Run the tests
 if __name__ == "__main__":

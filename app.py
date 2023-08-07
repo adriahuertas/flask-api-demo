@@ -62,7 +62,7 @@ def get_currency_rate():
     if rate is None:
         return {"Error": "Curriencies not found"}
     else:
-        return rate
+        return {"rate": rate}
 
 
 ## Transactions routes ##
