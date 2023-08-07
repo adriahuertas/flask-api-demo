@@ -5,7 +5,7 @@ back-end test api
 ## Coses a tenir en compte
 
 Tot i que no té gaire sentit en un exemple tant petit, ja que l'enunciat demana fer servir OO patterns, he afegit
-la classe Transaction per gestionar les transaccions a mode d'exemple. 
+la classe Transaction per gestionar les transaccions a mode d'exemple.
 
 Tampoc queda massa clar d'on treure les dades que retorna la API. He optat per utilitzar la "dummy data" que hi ha
 a l'enunciat.
@@ -29,7 +29,7 @@ Retorna el currency rate passant com a paràmetres els valors from i to. Exemple
 
 Retorna totes les transaccions passant com a paràmetres la currency i, opcionalment, l'sku. Exemples:
 
-/transactions?currency=USD
+/transactions?currency=USD  
 /transactions?currency=USD&sku=T2006
 
 ## Per posar en marxa la API:
