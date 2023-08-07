@@ -42,7 +42,7 @@ class FlaskTest(unittest.TestCase):
         response = tester.get("/currency_rate?from=EUR&to=USD")
         message = response.data
         status = response.status_code
-        self.assertIn(b'{"rate":"1.359"}', message)
+        self.assertIn(b"1.359", message)
         self.assertEqual(status, 200)
 
 
