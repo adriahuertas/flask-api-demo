@@ -1,6 +1,6 @@
-# back-end-test
+# Python/Flask API demo
 
-back-end test api
+Demo d'API amb Python/Flask
 
 ## Coses a tenir en compte
 
